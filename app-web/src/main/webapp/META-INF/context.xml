@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+	<Resource name="jdbc/fossds" auth="Container" type="javax.sql.DataSource"
+		username="dp_ebs" password="dp_ebs" driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@114.80.110.224:1521:orcl" maxActive="2"
+		maxIdle="2" />
+</Context>

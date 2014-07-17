@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>app</artifactId>
+        <groupId>com.deppon.dpap</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>app-module</artifactId>
+	<packaging>jar</packaging>
+
+	<name>app-module</name>
+	<dependencies>
+		<!-- DPAP libs start -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-authorization</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-dict</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-frameworkimpl</artifactId>
+		</dependency>
+		<!--  -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-login</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-message</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-monitor</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-sync</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>common-sysconfig</artifactId>
+		</dependency>
+		<!-- DPAP libs end -->
+		
+		<!-- CXF lib -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+		</dependency>
+		
+		<!-- CXF lib end --> 
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+		
+		<!-- ORACLE驱动包  注意：在上测试和生产的时候，scope要改为test -->
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle-jdbc</artifactId>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>
